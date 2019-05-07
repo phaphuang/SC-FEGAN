@@ -1,4 +1,8 @@
 import sys
+import os
+file_dir = os.path.dirname(__file__)
+sys.path.append(file_dir)
+
 from PyQt5.QtCore import *
 from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
@@ -9,7 +13,6 @@ import cv2
 import numpy as np
 from utils.config import Config
 from model import Model
-import os
 import time
 
 class Ex(QWidget, Ui_Form):
